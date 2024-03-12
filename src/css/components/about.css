@@ -1,0 +1,101 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+    padding: 9rem 7rem 7rem 10rem;
+    border: ridge 4px rgba(255, 255, 255, 2);
+    border-radius: 20px;
+}
+
+
+.about .about__left {
+    max-width: 40rem;
+    flex: 1;
+}
+
+.about .about__left h2 {
+    transition: background 0.4s linear;
+}
+
+.about .about__left p {
+    font-size: 19px;
+    margin: 1rem 0 2rem;
+}
+
+.about .about__left ul {
+    margin-left: -1.2rem;
+}
+
+.about .about__left ul li {
+    display: inline-block;
+}
+
+.about .about__left ul a {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.about .about__left ul a img {
+    border-radius: 20%;
+    width: 40px;
+    transition: 0.2s linear;
+}
+
+.about .about__left ul a img:hover {
+    border-radius: 20%;
+    transform: scale(1.2);
+    transition: 0.2s linear;
+}
+
+.about .about__right {
+    flex: 1;
+    max-width: 66rem;
+}
+
+.about .about__right p {
+    font-size: 19px;
+}
+
+.return-to-top {
+    position: fixed;
+    margin: 30px;
+    bottom: 25px;
+    right: -500px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: .4s all;
+    transform: scale(0.7)
+}
+
+.return-to-top:hover {
+    display: block;
+}
+
+.show-button .return-to-top {
+    right: 10px;
+    transition: .4s all;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about__left {
+        max-width: 66rem;
+        text-align: center;
+    }
+
+    .about .about__right {
+        text-align: center;
+    }
+}
